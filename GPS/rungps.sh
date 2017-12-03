@@ -9,6 +9,18 @@ LOGFILE=$BASEDIR/gpslog.txt
 RAWFILE=$BASEDIR/rawgps/gpsraw-$DATE.txt
 DATAFILE=$BASEDIR/data/gpsdata-$DATE.txt
 
+if [[ ! -d $BASEDIR ]]; then
+  mkdir $BASEDIR
+fi
+
+if [[ ! -d $BASEDIR/rawgps ]]; then
+  mkdir $BASEDIR/rawgps
+fi
+
+if [[ ! -d $BASEDIR/data ]]; then
+  mkdir $BASEDIR/data
+fi
+
 dateStamp=$(date +"%Y-%m-%d")
 echo $dateStamp "Start GPS Process" >> $LOGFILE
 
