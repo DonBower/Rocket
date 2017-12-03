@@ -34,7 +34,7 @@ After a few moments, your RaspberryPi should be connected to the network.  Hover
 Next we update/upgrade the OS to the latest version, as well as the RaspberryPi Firmware.  <br />
 
 ```
-sudo apt-get update
+sudo apt-get -y update
 sudo rpi-update
 ```
 
@@ -42,8 +42,8 @@ At this point, your system may have actually performed a firmware update.  And a
 
 
 ```
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo apt-get -y upgrade
+sudo apt-get -y dist-upgrade
 sudo shutdown -r now
 ```
 
@@ -89,7 +89,7 @@ Reboot with `sudo shutdown -r now`
 Then it's time to get git, and configure the git Global Variables <br />
 
 ```
-sudo apt-get install git
+sudo apt-get -y install git
 git config --global user.name "Don Bower"
 git config --global user.email "Don.Bower@outlook.com"
 ```
@@ -169,8 +169,8 @@ To setup the [I2C (Inter-Integrated Circuit)](https://en.wikipedia.org/wiki/I%C2
 Interface, execute the following:
 
 ```
-sudo apt-get install -y python-smbus
-sudo apt-get install -y i2c-tools
+sudo apt-get -y install python-smbus
+sudo apt-get -y install i2c-tools
 ```
 Then use `sudo raspi-config` to enable the Interface.
 
