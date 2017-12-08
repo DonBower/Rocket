@@ -94,18 +94,18 @@ git config --global user.name "Don Bower"
 git config --global user.email "Don.Bower@outlook.com"
 ```
 
-Next Create a *Developer* directory, and clone this repository from there.  The *Developer* directory is standard practice for modern developers. Some use lowercase for the name, but since on the RaspberryPi, and my Mac, all the other preloaded directories are capitalized, (i.e. Documents, Pictures, etc...) I'll follow form. <br />
+Next Create a *developer* directory, and clone this repository from there.  The *developer* directory is standard practice for modern developers. Some use lowercase for the name, but since on the RaspberryPi, and my Mac, all the other preloaded directories are capitalized, (i.e. Documents, Pictures, etc...) I'll follow form. <br />
 
 ```
-mkdir ~/Developer
-cd ~/Developer
+mkdir ~/developer
+cd ~/developer
 git clone git@github.com:DonBower/rocket.git
 ```
 
 If you need updates from github, use git pull:
 
 ```
-cd ~/Developer/rocket
+cd ~/developer/rocket
 git pull origin master
 ```
 
