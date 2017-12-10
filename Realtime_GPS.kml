@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Placemark>
+    <name>0.1476 km/h,heading 0</name>
+    <description>Realtime GPS feeding</description>
+    <LookAt>
+        <longitude>-117.417065</longitude>
+        <latitude>34.03126</latitude>
+    </LookAt>
+    <Point>
+        <coordinates>-117.417065,34.03126,320.9</coordinates>
+    </Point>
+</Placemark>
+</kml>
